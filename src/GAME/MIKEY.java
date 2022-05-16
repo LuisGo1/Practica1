@@ -31,7 +31,7 @@ public class MIKEY extends Personaje
         }
         
     }
-
+//Polimorfismo
     @Override
     public void GANAR() 
     {

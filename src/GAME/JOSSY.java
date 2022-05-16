@@ -59,7 +59,7 @@ public class JOSSY extends Personaje
         
         return flag;
     }
-    
+    //POLIMORFISMO
     @Override
      public void ESTRATEGIA()
     {

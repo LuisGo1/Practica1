@@ -18,6 +18,7 @@ public class GAME_MODE {
         // TODO code application logic here
 
         //PERSONAJES
+        //NUEVA VARIABLE PARA EL CAST Y EL POLIMORFISMO
         Personaje _mikey = new MIKEY();
         Personaje _panda = new panda();
         Personaje _lucy = new LUCY();
@@ -90,6 +91,7 @@ public class GAME_MODE {
                     {
                         _mikey.ESTRATEGIA();
                     }
+                    // CASTING
                     ((panda)_panda).subir_Ataque();
                     ((MIKEY)_mikey).GOLPE_TACTICO();
     
@@ -126,6 +128,7 @@ public class GAME_MODE {
                     {
                         _mikey.ESTRATEGIA();
                     }
+                    //CASTING
                     ((MIKEY)_mikey).GOLPE_TACTICO();
                     ((LUCY)_lucy).Ataque_siniestro();
                 }
