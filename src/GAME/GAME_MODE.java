@@ -28,7 +28,9 @@ public class GAME_MODE {
         int TURNOS = 0;
         String PERSONAJE = "", OPONENTE = "", BATALLA = "";
         Scanner sc = new Scanner(System.in);
-
+        //Aqui se le agrega el Try Catch//
+        try{
+            
         System.out.println("\033[31m"+"***************************************************");
         System.out.println("\033[34m"+"ARRIVEDERCHI PLAYER_TOWN, BIENVENIDO A ESTA BATALLA");
         System.out.println("\033[31m"+"***************************************************\n\n");
@@ -818,10 +820,14 @@ public class GAME_MODE {
             }
             default:
             {
-                System.out.println("\033[34m"+"cuidado soldado... Las que has ingresado aun no estan disponibles");
+              System.out.println("\033[34m"+"cuidado soldado... Las que has ingresado aun no estan disponibles");
                 break;
             }  
+         }
+        } catch(RuntimeException mensaje){
+                System.out.println("Reiniciar El Programa hubo un error en una ejecucion"); 
         }
+        
     }
         public static int lucha(double ta)
     {
