@@ -66,7 +66,7 @@ public class GAME_MODE {
             System.out.println("5. DESTINY");
             OPONENTE = sc.next();
         }
-
+        
         BATALLA = PERSONAJE.trim() + OPONENTE.trim();
         switch (BATALLA) 
         {
